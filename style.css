@@ -1,0 +1,157 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.div-main{
+  background-color:#CCCBC8; 
+  max-width: 32%;
+  margin-left: 35%;
+}
+
+.text-div{
+  background: #0089FF;
+  height: 200px;
+  max-width: 32%;
+  margin-left: 35%;
+}
+
+.img {
+  width: 7rem;
+  display: block;
+  object-fit: cover;
+  margin: 4rem auto;
+  user-select: none;
+}
+
+.joke {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  padding-top: 10%;
+
+}
+.ct{
+  font-size: 16px;
+  text-align: center;
+  padding-top: 1%;
+}
+
+.btn1 {
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  width: 75px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #ffffff; 
+  color: black; 
+}
+
+.btn1:hover .btn1:focus {
+  background-color: #006BFF;
+}
+
+.btn1:active {
+  transform: scale(0.98);
+   background-color: #006BFF;
+}
+
+.btn1::selection {
+  background-color: #006BFF;
+}
+
+#newjoke{
+  color: #0089FF;
+  background: white;
+  padding-top: 2%;
+  padding-left: 48%;
+  text-align: center;
+}
+
+/* media queries */
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 9px;
+  }
+
+  body {
+    display:block;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 1rem;
+  }
+  .div-main{
+    max-width: 200%;
+    margin-left: 0%;
+  }
+
+  .text-div{
+    margin-left: 0%;
+    max-width: 100%;
+
+  }
+
+  #newjoke{
+    color: #0089FF;
+    background: white;
+    padding-top: 4%;
+    padding-left: 40%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 7px;
+  }
+  
+  body {
+ 
+    overflow: scroll;
+
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 1rem;
+  }
+
+  .div-main{
+    max-width: 200%;
+    margin-left: 0%;
+  }
+
+  .text-div{
+    margin-left: 0%;
+    max-width: 100%;
+  }
+
+  #newjoke{
+    color: #0089FF;
+    background: white;
+    padding-top: 4%;
+    padding-left: 40%;
+    text-align: center;
+  }
+}
+
